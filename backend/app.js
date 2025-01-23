@@ -104,10 +104,12 @@ app.use(express.json())
 const mongoose=require("mongoose")
 const {v4:uuidv4}=require("uuid")
 
-const port=8000
+const port=8001
 
+// "mongodb://localhost:27017/p"
 
-const mongurl="mongodb://localhost:27017/p"
+const mongurl="mongodb+srv://poojamarudhu:pooja123@cluster0.h0m7y.mongodb.net/pooj"
+
 mongoose
   .connect(mongurl)
   .then(()=>{
